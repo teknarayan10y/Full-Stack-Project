@@ -1,0 +1,23 @@
+extends baseEmail
+
+block content
+  p Hi #{firstName},
+  p #{inviterName} has invited you to join the team "#{teamName}" on EventEase!
+  
+  .team-details(style='margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 4px;')
+    h3(style='margin-top: 0;') #{teamName}
+    if teamDescription
+      p(style='margin: 10px 0 0;') #{teamDescription}
+  
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') View Team & Accept Invitation
+  
+  p If you have any questions, please contact the team leader or reply to this email.
+  p - The EventEase Team

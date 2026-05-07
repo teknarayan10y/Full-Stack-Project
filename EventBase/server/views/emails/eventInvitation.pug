@@ -1,0 +1,30 @@
+extends baseEmail
+
+block content
+  p Hi #{firstName},
+  p #{inviterName} has invited you to the event "#{eventName}"!
+  
+  .event-details(style='margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 4px;')
+    h3(style='margin-top: 0;') #{eventName}
+    p(style='margin-bottom: 5px;') 
+      strong Date: 
+      | #{eventDate}
+    if eventLocation
+      p(style='margin-bottom: 5px;')
+        strong Location: 
+        | #{eventLocation}
+    if eventDescription
+      p(style='margin: 10px 0 0;') #{eventDescription}
+  
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') View Event & RSVP
+  
+  p If you have any questions, please contact the event organizer or reply to this email.
+  p - The EventEase Team

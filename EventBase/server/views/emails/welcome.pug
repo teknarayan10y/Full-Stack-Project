@@ -1,0 +1,17 @@
+extends baseEmail
+
+block content
+  p Hi #{firstName},
+  p Welcome to EventEase, we're glad to have you 🎉🙏
+  p We're all about helping you discover and manage events effortlessly!
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') Get started with EventEase
+  p If you need any help with planning your next event, please don't hesitate to contact us!
+  p - The EventEase Team

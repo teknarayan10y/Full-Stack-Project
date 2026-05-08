@@ -1,0 +1,454 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f7fafc;
+  margin: 0;
+}
+
+.hotels-page {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  margin-top: 64px;
+}
+
+/* Filters Section */
+.filters-section {
+  position: sticky;
+  top: 64px;
+  z-index: 10;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.filters-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #2d3748;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  background-color: white;
+}
+
+.filter-input::placeholder {
+  color: #94a3b8;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234A5568'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+  padding-right: 2.5rem;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  background-color: white;
+}
+
+.amenities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.amenity-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #4a5568;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.amenity-label:hover {
+  background-color: #f7fafc;
+}
+
+.amenity-label input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #4299e1;
+  cursor: pointer;
+}
+
+/* Hotels Grid Container */
+.hotels-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hotels Grid */
+.hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  flex: 1;
+  align-content: start;
+}
+
+.hotel-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.hotel-image {
+  height: 220px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hotel-card:hover .hotel-image {
+  height: 240px;
+}
+
+.hotel-info {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 100%);
+  backdrop-filter: blur(10px);
+}
+
+.hotel-info h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: #1a202c;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.location {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location::before {
+  content: "📍";
+  font-size: 1.1rem;
+}
+
+.rating {
+  color: #f6ad55;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 1rem;
+}
+
+.rating::after {
+  content: "★";
+  color: #f6ad55;
+}
+
+.price {
+  color: #2b6cb0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.price::before {
+  content: "From";
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #718096;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.amenities span {
+  background: #ebf8ff;
+  color: #2b6cb0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: all 0.2s ease;
+}
+
+.amenities span:hover {
+  background: #bee3f8;
+  transform: translateY(-1px);
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #4a5568;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 400px;
+  width: 100%;
+}
+
+.loading::after {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid #e2e8f0;
+  border-top-color: #4299e1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error and No Results States */
+.error-message {
+  background: #fff5f5;
+  color: #e53e3e;
+  padding: 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+  border: 1px solid #feb2b2;
+  font-weight: 500;
+  width: 100%;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #718096;
+  grid-column: 1 / -1;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 400px;
+  width: 100%;
+}
+
+.no-results::before {
+  content: "🔍";
+  font-size: 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hotels-page {
+    padding: 0;
+  }
+
+  .hotels-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotels-page {
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .filters-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hotels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-image {
+    height: 180px;
+  }
+
+  .hotel-card:hover .hotel-image {
+    height: 200px;
+  }
+
+  .amenities-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filter-group h3 {
+    font-size: 1rem;
+  }
+
+  .hotel-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .price {
+    font-size: 1.15rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a202c;
+  }
+
+  .hotels-page {
+    background-color: #1a202c;
+  }
+
+  .filters-section,
+  .hotel-card {
+    background: rgba(26, 32, 44, 0.8);
+    border-color: rgba(45, 55, 72, 0.8);
+  }
+
+  .filter-input,
+  .filter-select {
+    background-color: rgba(45, 55, 72, 0.5);
+    border-color: rgba(45, 55, 72, 0.8);
+    color: #e2e8f0;
+  }
+
+  .filter-input::placeholder {
+    color: #718096;
+  }
+
+  .filter-input:focus,
+  .filter-select:focus {
+    background-color: rgba(45, 55, 72, 0.8);
+  }
+
+  .filter-group h3,
+  .hotel-info h3 {
+    color: #e2e8f0;
+  }
+
+  .hotel-info {
+    background: linear-gradient(180deg, rgba(26, 32, 44, 0.9) 0%, rgba(26, 32, 44, 1) 100%);
+  }
+
+  .location,
+  .amenity-label {
+    color: #a0aec0;
+  }
+
+  .amenities span {
+    background: rgba(66, 153, 225, 0.15);
+    color: #63b3ed;
+  }
+
+  .amenities span:hover {
+    background: rgba(66, 153, 225, 0.25);
+  }
+
+  .error-message {
+    background: rgba(229, 62, 62, 0.1);
+    border-color: rgba(229, 62, 62, 0.3);
+  }
+
+  .loading,
+  .no-results {
+    color: #a0aec0;
+  }
+}

@@ -1,0 +1,5 @@
+.header {
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #1976d2 30%, #2196f3 90%);
+  box-shadow: 0 3px 5px 2px rgba(33, 150, 243, .3);
+}

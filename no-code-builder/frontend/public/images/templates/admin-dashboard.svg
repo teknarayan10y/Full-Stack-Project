@@ -1,0 +1,39 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fixed Header -->
+  <rect x="10" y="10" width="380" height="40" fill="#2962FF" stroke="#2451cc" stroke-width="2" />
+  <text x="40" y="35" font-family="Arial" font-size="16" font-weight="bold" text-anchor="start" fill="white">Admin Dashboard</text>
+  <circle cx="360" cy="30" r="15" fill="white" opacity="0.8" />
+  <text x="360" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#2962FF">👤</text>
+  
+  <!-- Fixed Sidebar -->
+  <rect x="10" y="60" width="80" height="230" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" />
+  
+  <!-- Sidebar Menu Items -->
+  <rect x="15" y="70" width="70" height="25" fill="#e9ecef" rx="3" ry="3" />
+  <text x="50" y="87" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Dashboard</text>
+  
+  <text x="50" y="120" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Users</text>
+  <text x="50" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Products</text>
+  <text x="50" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Analytics</text>
+  <text x="50" y="210" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Settings</text>
+  
+  <!-- Main Content Area -->
+  <rect x="100" y="60" width="290" height="230" fill="white" stroke="#e9ecef" stroke-width="2" />
+  
+  <!-- Dashboard Cards -->
+  <rect x="110" y="70" width="130" height="80" fill="white" stroke="#e9ecef" stroke-width="2" rx="5" ry="5" />
+  <text x="175" y="100" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#2962FF">128</text>
+  <text x="175" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">New Users</text>
+  
+  <rect x="250" y="70" width="130" height="80" fill="white" stroke="#e9ecef" stroke-width="2" rx="5" ry="5" />
+  <text x="315" y="100" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#F50057">$9.4k</text>
+  <text x="315" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Revenue</text>
+  
+  <!-- Chart Area -->
+  <rect x="110" y="160" width="270" height="120" fill="white" stroke="#e9ecef" stroke-width="2" rx="5" ry="5" />
+  <text x="130" y="180" font-family="Arial" font-size="14" font-weight="bold" text-anchor="start" fill="#333">Performance Overview</text>
+  
+  <!-- Simple Chart -->
+  <polyline points="130,250 170,220 210,240 250,200 290,210 330,180" 
+            fill="none" stroke="#2962FF" stroke-width="2" />
+</svg>

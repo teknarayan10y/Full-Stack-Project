@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <rect x="10" y="10" width="380" height="40" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" />
+  <text x="200" y="35" font-family="Arial" font-size="16" text-anchor="middle" fill="#2962FF">Header</text>
+  
+  <!-- Sidebar -->
+  <rect x="10" y="60" width="100" height="190" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" />
+  <text x="60" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Sidebar</text>
+  
+  <!-- Main Content -->
+  <rect x="120" y="60" width="270" height="190" fill="#ffffff" stroke="#e9ecef" stroke-width="2" />
+  <text x="255" y="155" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Main Content</text>
+  
+  <!-- Footer -->
+  <rect x="10" y="260" width="380" height="30" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" />
+  <text x="200" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Footer</text>
+</svg>

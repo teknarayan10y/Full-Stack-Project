@@ -1,0 +1,24 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <rect x="10" y="10" width="380" height="40" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" />
+  <text x="200" y="35" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#2962FF">Contact Us</text>
+  
+  <!-- Form Container -->
+  <rect x="50" y="60" width="300" height="230" fill="white" stroke="#e9ecef" stroke-width="2" rx="5" ry="5" />
+  
+  <!-- Name Field -->
+  <text x="70" y="85" font-family="Arial" font-size="14" text-anchor="start" fill="#333">Name</text>
+  <rect x="70" y="95" width="260" height="30" fill="white" stroke="#ced4da" stroke-width="1" rx="4" ry="4" />
+  
+  <!-- Email Field -->
+  <text x="70" y="145" font-family="Arial" font-size="14" text-anchor="start" fill="#333">Email</text>
+  <rect x="70" y="155" width="260" height="30" fill="white" stroke="#ced4da" stroke-width="1" rx="4" ry="4" />
+  
+  <!-- Message Field -->
+  <text x="70" y="205" font-family="Arial" font-size="14" text-anchor="start" fill="#333">Message</text>
+  <rect x="70" y="215" width="260" height="60" fill="white" stroke="#ced4da" stroke-width="1" rx="4" ry="4" />
+  
+  <!-- Submit Button -->
+  <rect x="70" y="285" width="100" height="35" fill="#2962FF" stroke="#2451cc" stroke-width="1" rx="4" ry="4" />
+  <text x="120" y="307" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Submit</text>
+</svg>

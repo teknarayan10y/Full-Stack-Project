@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <rect x="10" y="10" width="380" height="50" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" />
+  <text x="200" y="40" font-family="Arial" font-size="16" text-anchor="middle" fill="#2962FF">Header</text>
+  
+  <!-- Content -->
+  <rect x="10" y="70" width="380" height="170" fill="#ffffff" stroke="#e9ecef" stroke-width="2" />
+  <text x="200" y="160" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Content Area</text>
+  
+  <!-- Footer -->
+  <rect x="10" y="250" width="380" height="40" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" />
+  <text x="200" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Footer</text>
+</svg>
